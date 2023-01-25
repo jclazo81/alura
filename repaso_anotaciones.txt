@@ -1,0 +1,27 @@
+listado de Funciones aplicadas en javascrip 
+
+document.write() // funcion en javascrip para generar una impresion 
+
+para declarar variables vamos a utilizar la palabra reservada var 
+para declarar constantes vamos a utilizar la palabra reservada const. 
+
+
+
+para declaracion una funcion en javascrip utilizamos la palabra reservada 
+function nombreFuncion()
+{
+	// especificaciones de la funcion y podemos pasar por parametros 
+	algunas variables
+}
+
+ACEITE DE CAJA
+MANO DE OBRA
+
+declaracion de funciones 
+declaracion de variables 
+declaracion de constantes 
+utilizacion de la estructura de control if()
+utilizacion de la funcion document.write
+utilizacion de la funcion parseInt() // funcion para convertir una captura de datos tipos string en int
+utilizacion de la funcion prompt();
+

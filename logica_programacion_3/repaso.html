@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>repaso</title>
+        <meta charset="UTF-8">
+        <!--<link rel="stylesheet" href="estilo.css" type="text/css"> -->
+    </head>
+<body>
+    <header></header>
+    <canvas width="600" height="400"></canvas> 
+
+    <script>
+       
+       var aprendi = false;
+
+       if(aprendi)
+       {
+         alert("practicanddo nuevas formas de escribir if");
+       }
+       
+       else
+       {
+            alert("Esta es otroa forma de escribir un if con variable sde tipo boolean");
+       }
+       
+       /*
+       var aprendi = false;
+
+        if(aprendi == true)
+    {
+        alert("El Instructor queda muy feliz");
+    }
+    else
+    {
+        alert("El instructor no va a desistir hasta que el alumno sea una eminencia en programación");
+    }
+        */
+    </script>
+
+
+   <!--
+    <script>
+    
+    
+    
+        var heroes = ["superman","Thor","Batman","Mujer Maravilla"];
+
+            
+
+            for (var i=1; i <= heroes.length; i++)
+            {
+                document.write (heroes[i]);
+                document.write (","+"&nbsp;");
+                //document.write ("<hr>");
+                
+            }
+
+            
+
+    </script>
+   
+   -->
+   
+    <!-- repaso de como declara un vector array asignarle varlo y recorrer todos sus datos
+    <script>
+       
+       function imprimir(texto) 
+       {
+            document.write(texto);
+            document.write("<br>");
+
+       }
+       
+       
+
+       var vector1 = ["alberto","jose","alex","juan","wilfredo","maria","pedro","luis","cristobal"];
+
+       for (x = 0;  x<=vector1.length; x++ )
+       {
+       
+            imprimir (vector1[x]);
+
+        }   
+
+
+
+       /*
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        function dibujarCuadro(xi,yi,xl,xa,color)
+        {
+        pincel.fillStyle = color;
+        pincel.fillRect(xi,yi,xl,xa);
+        }
+        
+      /*  dibujarCuadro(0,0,600,400,"#3388aa"); */
+          /*
+        function dibujarCirculo(xi,yi,radio,color)
+        {
+            pincel.fillStyle = color;
+            pincel.beginPath();  // funcion para comenzar a dibujar una circunferfencia
+            pincel.arc(xi,yi,radio,0,2*3.14);
+            pincel.fill();
+        }
+        
+        dibujarCirculo(50,200,50,"#3388aa");
+        
+        /* Repaso para creacion de cuadrados
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        function dibujarCuadro(x,y,x1,y1,color)
+        {
+            pincel.fillStyle = color;
+            pincel.fillRect(x,y,x1,y1);
+            pincel.strokeStyle = "white";
+            pincel.strokeRect(x,y,x1,y1)  
+        }
+
+        
+        for ( z =0; z<=600;z=z+10)
+        {
+            dibujarCuadro(10,z,50,50);
+            dibujarCuadro(100,z,50,50);
+            dibujarCuadro(150,z,50,50);
+        }
+        
+        /* vamos a probar con el loop o lazo while pero vamos a hacer los mismo con el lazos for
+        var cnt = 0;
+
+        while (cnt <= 600)
+        {
+            dibujarCuadro(cnt,0,50,50);
+
+            cnt=cnt+10;
+        }
+
+        */
+
+    </script>
+
+
+    <footer></footer>
+
+</body>
+
+</html>

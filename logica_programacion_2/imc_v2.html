@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IMG Version 1</title>
+        <meta charset="UTF-8">
+        <!--<link rel="stylesheet" href="estilo.css" type="text/css"> --> 
+    
+           
+    </head>
+<body>
+    <header><h1>PROGRAMA DE IMC</h1></header>
+    
+    <script>
+                
+        var nombre = prompt("Ingrese su Nombre");
+        var peso = parseInt(prompt("Ingrese su peso")) ;
+        var altura = parseFloat(prompt("Ingrese su altura")) ;
+        var imc = 0;
+            function saltoLinea()
+        {
+            document.write("<br><br><br><hr>");
+        }
+
+        function imprimir(frase)
+        {
+            document.write(frase);
+            saltoLinea();
+        }
+        function calcularImc(peso,altura)
+        {
+            imc = peso / (altura*altura);
+            return imc;
+            // o se podria escribir tambien como return peso / (altura*altura);
+        }
+
+        imprimir("La imc de" +" " +nombre +" es:"+(calcularImc(peso,altura)));
+
+        // si calcularImc < 18.5 abajo de lo recomendado
+
+        if(calcularImc < 18.5) // si calcularImc < 18.5 abajo de lo recomendado
+        {
+             imprimir("IMC abajo de lo recomendando");
+        }
+
+        if(calcularImc >= 30) // si calcularImc < 30 obecidad
+        {
+             imprimir("IMC considerado como obesidad");
+        }
+
+
+        if(calcularImc >= 18.5 ) // si calcularImc > 18.5 abajo de lo recomendado
+        {
+             if(calcularImc <= 25)
+             {
+                imprimir("IMC arriba de lo recomendando");
+             } 
+            
+        }
+
+        
+
+    </script>
+    
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Programa2 HTML</title>
+        <meta charset="UTF-8">
+        <!-- <link rel="stylesheet" href="estilo.css" type="text/css">   --> 
+    </head>
+<body>
+    <header></header>
+    <canvas width="600" height="400" > </canvas>
+    
+    <script>
+
+        function dibujarCuadrado(x,y,x1,y1,color)
+        {
+        var pantalla = document.querySelector("canvas"); // Variable conector usando querySelector entre javascrip y html
+        var pincel = pantalla.getContext("2d"); // Variable pincel obtiene todo el contenido del pantalla en 2d
+        
+       pincel.fillStyle = color;
+       pincel.fillRect(x,y,x1,y1);
+       pincel.strokeStyle = "black";
+       pincel.strokeRect(x,y,x1,y1);
+
+        }
+        /*
+        var x = 0;
+        
+        while( x<=600)
+        {
+            dibujarCuadrado(x,0,50,50,"red");
+            dibujarCuadrado(x,50,50,50,"yellow");
+            dibujarCuadrado(x,100,50,50,"green");
+            x = x+50;
+        }
+          */
+         /*vamos a hacer un ejercicio con for */   
+         for(var x=0; x <=600; x= x+50)
+         {
+            dibujarCuadrado(x,0,50,50,"red");
+            dibujarCuadrado(x,50,50,50,"yellow");
+            dibujarCuadrado(x,100,50,50,"green");
+         }
+       
+
+    </script>
+    
+    <footer></footer>
+</body>
+</html>

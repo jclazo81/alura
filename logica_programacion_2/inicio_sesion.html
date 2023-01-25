@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>INICIO DE SESION</title>
+        <meta charset="UTF-8">
+        <!-- <link rel="stylesheet" href="estilo.css" type="text/css">-->
+    </head>
+<body>
+    <header></header>
+        <h1>INICIO DE SESION</h1>
+        <script>
+    
+        var inicioDeSesionRegistrado = "alura";
+        var contrasenhaRegistrada = "alura321";
+       
+        for(var cont=1;cont <=3;cont++)
+        {
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) 
+        {
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            break;    
+        } 
+        else 
+        {
+        alert("inicio de sesión inválido. Favor intente de nuevo");
+        }
+        }
+</script>
+<script>
+    /* Esta es la misma solucion pero con while
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+
+    var maximoIntentos = 3;
+    var intentoActual = 1;
+
+    while(intentoActual <= maximoIntentos){
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+        if(inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada){
+            alert("Bienvenido al sistema" + inicioDeSesionIngresado);
+            intentoActual = maximoIntentos; // Lo hice bien, así que paso todos los intentos que falten y salgo del loop. Allá abajo aumentará +1! 
+        } else {
+            if (intentoActual == 3) {
+                alert("Agotaste el número permitido de intentos!");
+            } else {
+                alert("Inicio de sesión inválido. Favor intente de nuevo");
+            }
+        }
+
+       // vaya al próximo intento 
+        intentoActual = intentoActual +1  
+    }  */
+
+</script>
+
+                
+
+        </script>
+    
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Media de las edades de la familia</title>
+        <meta charset="UTF-8">
+        <!--<link rel="stylesheet" href="estilo.css" type="text/css"> --> 
+    </head>
+<body>
+    <header>
+        <h1>PROGRAMA PARA CALCULAR LA MEDIA DE LA EDAD DE UNA FAMILIA</h1>
+    </header>
+    <script>
+        function saltarLinea()
+        {
+            document.write("<br><br><br>");
+        }
+        function imprimir(frase)
+        {
+            document.write(frase);
+            saltarLinea();
+        }
+
+        var numeroMiembros = parseInt(prompt("Ingrese la cantidad de miembros de su familia"));
+        var contador = 1; // es necesario declara una variable contador 
+        var acumuladorEdad = 0;  // es necesario declarar un acumulador y la inicializacion de la variable debe de estar fuera del lazo
+        
+        /* este ejercicio se puede hacer con la estructura while y con la estructura for
+        while ( contador <= numeroMiembros)
+        {
+           
+           let edad = parseInt(prompt("Ingrese la edad del familiar"+" "+contador));
+           contador++;
+           acumuladorEdad = acumuladorEdad + edad;
+        }  
+        // vamos a hacer el mismo ejercicio pero con la estructura for
+        */
+        for(contador =1; contador<=numeroMiembros;contador++ )
+        {
+            let edad = parseInt(prompt("Ingrese la edad del familiar"+" "+contador));
+            acumuladorEdad = acumuladorEdad + edad;
+        }
+
+        var mediaEdades = acumuladorEdad / numeroMiembros;
+        imprimir("La Media de las edades de la familia es "+mediaEdades);
+        
+        imprimir("FIN");
+    </script>
+    
+    <footer></footer>
+</body>
+</html>

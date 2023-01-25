@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculo_Consumo</title>
+        <meta charset="utf-8">
+    </head>
+<body>
+    <header></header>
+        <h3>Alcohol o Gasolina?</h3>
+        <br>
+        
+        
+        <script>
+            var tanque = 40;
+            var recorrido = 480;
+            var eficiencia = recorrido/tanque;
+            var salto_linea = "<br><br><br><br><br><br>";
+            function SaltarLinea()    /* para crear una funcion utilizamos este tipo de sintexis*/
+            {
+                document.write("<br><br><br><br><br>");
+            }
+            
+
+
+            function imprimir (frase)
+            {
+                document.write(frase); 
+                SaltarLinea();
+            }
+
+            document.write("La Eficiencia del vehiculo es"+","+eficiencia+" Quiere decir que por cada litro el carro recorre "+ eficiencia+" KM");
+            
+            SaltarLinea();  // funcion que ingresa un salto de linea
+            imprimir("Nuevos parametros de ingreso de informacion");
+            
+            document.write (salto_linea);
+            SaltarLinea();
+            document.write("<h3>Pero si utilizamos alcohol con el tanque de 40 litros solo recorre 300 Km cual es la eficiencia</h3>");
+            recorrido = 300;
+            var eficiencia = recorrido/tanque;
+            document.write("La Eficiencia del vehiculo es"+","+eficiencia+" Quiere decir que por cada litro el carro recorre "+ eficiencia+" KM");
+        
+            
+            
+        
+        </script>
+    
+    <footer></footer>
+</body>
+</html>
+
+<!--
+repaso de las lineas de codigo aprendidas 
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>Titulo de la Pagina Web</title>
+         <meta charset="utf-8">
+         <link rel="stylesheet" href="estilo.css" type="text/css">
+    </head>
+<body>
+    <header></header>
+        <script>
+                document.write ("Este es una nueva impresion de codigo");
+                var string1 = "Estamos Asignado una cadena a la variable string1";
+                document.write ("<br>");
+                document.write (string1);
+
+        </script>
+
+    <footer></footer>
+</body>
+</html>
+-->

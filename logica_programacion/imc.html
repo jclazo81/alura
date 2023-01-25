@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IMC</title>
+        <meta charset="UTF-8">
+        <!-- <link rel="stylesheet" href="estilo.css" type="text/css"> -->
+    </head>
+<body>
+    <header></header>
+        <h1>PROGRAMA CALCULO IMC</h1>
+        <script>
+             // formula para caluclar el IMC = Peso/altura al cuadrado
+            
+            function saltarLinea()
+            {
+                document.write("<br><br><br><hr><br><br>");
+            }
+            
+            function imprimir(frase)
+            {
+                document.write(frase);
+                saltarLinea();
+            }
+            
+            function calcularImc(peso,altura,nombre)
+            {
+            imc = (peso / (altura * altura));
+            imprimir("El IMC calculado de:" + nombre+" Es " + imc);
+            //return(imc); // es necesario poner ese return para que la funcion retorne el dato si no aparece como no definido
+            }
+            //imc_imp = calcularImc(180,1.71)
+            //imprimir("El IMC de la persona es:"+ imc_imp);
+
+        
+        
+        </script>
+    
+    <footer></footer>
+</body>
+</html>

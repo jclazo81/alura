@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Media de las edades de la familia</title>
+        <meta charset="UTF-8">
+        <!--<link rel="stylesheet" href="estilo.css" type="text/css"> --> 
+    </head>
+<body>
+    <header>
+        <h1>PROGRAMA PARA CALCULAR LA MEDIA DE LA EDAD DE UNA FAMILIA</h1>
+    </header>
+    <script>
+        function saltarLinea()
+        {
+            document.write("<br><br><br>");
+        }
+        function imprimir(frase)
+        {
+            document.write(frase);
+            saltarLinea();
+        }
+        var valorInicial = 2;
+        var cont = 1;
+
+        while(valorInicial <=100)
+        {
+            imprimir(valorInicial);
+            valorInicial = valorInicial+2;
+            cont++;
+        }
+
+        imprimir("FIN");
+        
+    </script>
+    
+    <footer></footer>
+</body>
+</html>

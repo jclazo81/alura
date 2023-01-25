@@ -1,0 +1,79 @@
+
+body 
+{
+    background-color: #cccccc;
+}
+#banner
+{
+    width: 100%;
+}
+.principal
+{
+    padding: 20%;
+}
+
+.titulo-centralizado
+{
+    text-align: center;
+}
+
+.titulo-principal
+{
+    padding-left: 30px;
+}
+h1
+{
+    text-align: center;
+    background-color: #cccccc ;
+    height: 150px
+}
+
+p
+{
+    text-align: center;
+    background-color: #cccccc;
+}
+
+strong
+{
+    color: darkred;
+}
+
+em strong
+{
+    color: aqua;
+}
+
+#mision /* para identificar y referenciar el id de las etiquetas html */
+{
+ font-size: 20px;
+}
+
+.diferenciales
+{
+    background-color: #310e81d3;
+    padding: 30px;
+}
+h2
+{
+    text-align: center;
+}
+
+.items /*para identificar y referenciar clases de las etiquetas html */
+{
+  font-style: italic;
+}
+
+ul
+{
+    display: inline-block; /* solo para usar el contenido del texto de la lista*/
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imgdiferenciales
+{
+    width: 50%;
+}
+

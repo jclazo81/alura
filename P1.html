@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>titulo de la pagina web</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilo.css" type="text/css">
+    </head>
+<body>
+    <header></header>
+    <h1>validador de edad</h1>
+    <script>
+            
+      function saltarLinea()
+      {
+         document.write("<br>");
+      }
+      
+        function imprimir(frase)
+       {
+        document.write(frase);
+        saltarLinea();
+       }
+
+       var nombre = prompt("Digite su nombre");
+       const maxedad = 18;
+       var edad = parseInt(prompt("Ingrese su edad"));
+
+       
+       function validarEdad(edad)
+       {
+            if (edad <= maxedad)
+            {
+                imprimir("Eres menor de edad y tu edad es"+" "+edad);
+                
+            }
+           else
+           {
+                imprimir("Eres mayor de edad y tu edad es"+" "+edad);
+           }
+            
+            
+       
+        }
+
+       validarEdad(edad);
+   
+    </script>
+    
+    
+    <footer></footer>
+</body>
+</html>

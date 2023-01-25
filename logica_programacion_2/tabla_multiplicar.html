@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calcular la tabla de multiplicar</title>
+        <meta charset="UTF-8">
+        <!-- <link rel="stylesheet" href="estilo.css" type="text/css">-->
+    </head>
+<body>
+    <header></header>
+        <h1>tabla de multiplicar</h1>
+        <script>
+                function saltarLinea()
+                {
+                    document.write("<br>");
+                    document.write("<br>");
+                    document.write("<br>");
+                }
+                function imprimir(frase)
+                {
+                    document.write(frase);
+                    saltarLinea();
+                }
+
+                var numero = parseInt(prompt("Ingrse el numero de la tabla a calcular"));
+               // var cont = 1;
+                
+               /* while(cont <= 10)
+                {
+                    let result = numero*cont;
+                    imprimir(numero + "x"+ cont+"="+result );
+                    cont = cont+1;
+                }  */
+
+               // el loop o lazo for tiene o esta compuesta por tres partes 
+               
+               for( var cont = 1;cont<=10;cont++) // el lazo for lleva 3 partes vartiable, condicion y contador incremental 
+               {
+                let result = numero*cont;
+                    imprimir(numero + "x"+ cont+"="+result );
+               }
+
+        </script>
+    
+    <footer></footer>
+</body>
+</html>

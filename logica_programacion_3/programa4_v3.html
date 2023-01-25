@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Programa 4 V 3</title>
+        <meta charset="UTF-8">
+        <!-- <link rel="stylesheet" href="estilo.css" type="text/css"> -->
+    </head>
+<body>
+    <header></header>
+    <canvas width="600" height="400"></canvas>
+    <script>
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+        pincel.fillStyle = "lightgrey";
+        pincel.fillRect(0,0,600,400);
+
+
+        function disenharCircunferencia(x,y,radio)
+        {
+            pincel.fillStyle = "blue";
+            pincel.beginPath();
+            pincel.arc(x,y,radio,0,2*Math.PI);
+            pincel.fill();
+        }
+
+        function limpiarPantalla()
+        {
+            pincel.clearRect(0,0,600,400); // funcion nativa para limpiar
+        }
+        
+        var x = 0;
+        var x1 = 1;
+        
+
+        function actualizarPantalla()
+        {
+            limpiarPantalla();
+            if (x > 600)
+            {
+                    x1 = -1;
+            }
+            else if (x < 0)
+            {
+                    x1 = 1;
+            }
+
+        disenharCircunferencia(x,20,10);
+        x = x+x1;
+            
+        }
+
+        setInterval(actualizarPantalla,5);
+        
+        /*function actualizarPantalla()
+        {
+            limpiarPantalla();
+            disenharCircunferencia(x,20,10);
+            x++;
+            
+        } */
+        
+        
+        
+        
+        
+        
+
+    </script>
+
+    
+    
+    <footer></footer>
+</body>
+</html>
