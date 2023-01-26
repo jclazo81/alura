@@ -25,3 +25,10 @@ utilizacion de la funcion document.write
 utilizacion de la funcion parseInt() // funcion para convertir una captura de datos tipos string en int
 utilizacion de la funcion prompt();
 
+**************
+Link para obtener configuraciones posibles con gir hub
+https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration.
+
+git log cheatsheet
+https://devhints.io/git-log
+
