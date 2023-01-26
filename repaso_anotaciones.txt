@@ -32,3 +32,5 @@ https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration.
 git log cheatsheet
 https://devhints.io/git-log
 
+crear un repositorio con git init
+
